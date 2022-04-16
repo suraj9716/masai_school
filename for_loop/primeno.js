@@ -1,0 +1,32 @@
+// Input
+// The first and the only line of the input contains the value stored innum
+
+
+// Output
+// If the value stored innum, is a prime number printYes, else printNo
+
+// Sample Input 1 
+
+// 13
+// Sample Output 1
+
+// Yes
+// Hint
+
+// In the sample test case, the value stored innum = 13. Since,13is a prime number, the output isYes
+
+function identifyPrime(num) {
+    var count =0;
+    for(var i =0;i<=num;i++)
+    {
+        if(num%i===0){
+            count++;
+        }
+    }
+    if(count===2){
+        console.log("Yes")
+    }
+    else{
+        console.log("No")
+    }
+}
